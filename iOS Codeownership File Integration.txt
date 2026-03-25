@@ -1,0 +1,129 @@
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Notes for Luciq integration:
+# https://docs.luciq.ai/docs/dynamic-team-ownership
+# 1. Path must include the actual source root, e.g., KeepTruckin/Feature or KeepTruckin/UI
+# 2. Luciq supports only the following wildcard patterns:
+#  */KeepTruckin/Feature
+#  KeepTruckin/Feature/*
+# 3. CODEOWNERS file is synced hourly
+
+# Equipment Monitoring
+/KeepTruckin/Feature/Asset/ @mobile_equipment_monitoring_piam
+/KeepTruckin/Feature/BleMesh/ @mobile_equipment_monitoring_piam
+/KeepTruckin/Feature/AssetAttachment/ @mobile_equipment_monitoring_piam
+/KeepTruckin/UI/ReeferManagement/ @mobile_equipment_monitoring_piam
+
+# Fleet Card
+/KeepTruckin/Feature/FleetCard/ @mobile_fleet_card_piam
+/KeepTruckin/Feature/SavingsFinder/ @mobile_fleet_card_piam
+/KeepTruckin/UI/FleetCard/ @mobile_fleet_card_piam
+/KeepTruckin/UI/SavingsFinder/ @mobile_fleet_card_piam
+
+# Enterprise Productivity
+/KeepTruckin/Feature/DocumentManagement/ @mobile_enterprise_productivity_piam
+/KeepTruckin/Feature/Messaging/ @mobile_enterprise_productivity_piam
+/KeepTruckin/Feature/NotificationCenter/ @mobile_enterprise_productivity_piam
+/KeepTruckin/UI/DocumentManagement/ @mobile_enterprise_productivity_piam
+/KeepTruckin/UI/Documents/ @mobile_enterprise_productivity_piam
+/KeepTruckin/UI/Messaging/ @mobile_enterprise_productivity_piam
+
+# Workforce Management
+/KeepTruckin/Feature/Training/ @mobile_workforce_management_piam
+/KeepTruckin/Feature/DriverRewards/ @mobile_workforce_management_piam
+/KeepTruckin/UI/TimeCard/ @mobile_workforce_management_piam
+/KeepTruckin/UI/DriverRewards/ @mobile_workforce_management_piam
+/KeepTruckin/UI/Training/ @mobile_workforce_management_piam
+/KeepTruckin/UI/TeamDriving/ @mobile_workforce_management_piam
+
+# Maintenance & Fuel
+/KeepTruckin/Feature/DVIREnhancements/ @mobile_maintenance_piam
+/KeepTruckin/Feature/DOTInspection/ @mobile_maintenance_piam
+/KeepTruckin/UI/DVIR/ @mobile_maintenance_piam
+/KeepTruckin/UI/DVIREnhancements/ @mobile_maintenance_piam
+/KeepTruckin/UI/DOTInspection/ @mobile_maintenance_piam
+/KeepTruckin/UI/ThirdSignatureReskin/ @mobile_maintenance_piam
+/KeepTruckin/View\ Controllers/DOT\ Inspection/ @mobile_maintenance_piam
+
+# Compliance - Cell Relay
+/KeepTruckin/Feature/Relay/ @mobile_compliance_cell_relay_piam
+/KeepTruckin/Feature/Eld/App/Relay/ @mobile_compliance_cell_relay_piam
+
+# Compliance - Core
+/KeepTruckin/Feature/Logs/ @mobile_compliance_piam
+/KeepTruckin/Feature/LogData/ @mobile_compliance_piam
+/KeepTruckin/Feature/LogSuggestion/ @mobile_compliance_piam
+/KeepTruckin/Feature/DrivingPeriods/ @mobile_compliance_piam
+/KeepTruckin/Feature/HOS/ @mobile_compliance_piam
+/KeepTruckin/Feature/EldCore/ @mobile_compliance_piam
+/KeepTruckin/Feature/Vehicle/ @mobile_compliance_piam
+/KeepTruckin/Feature/VehicleRegulation/ @mobile_compliance_piam
+/KeepTruckin/Feature/UnregulatedMovement/ @mobile_compliance_piam
+/KeepTruckin/Feature/BulkPostResolution/ @mobile_compliance_piam
+/KeepTruckin/Feature/SendObject/ @mobile_compliance_piam
+/KeepTruckin/Feature/MainLogList/ @mobile_compliance_piam
+/KeepTruckin/Singletons/ @mobile_compliance_piam
+/KeepTruckin/Module/DrivingPeriods/ @mobile_compliance_piam
+/KeepTruckin/View\ Controllers/ELD/ @mobile_compliance_piam
+/KeepTruckin/View\ Controllers/Logs/ @mobile_compliance_piam
+/KeepTruckin/ViewModels/ELD/ @mobile_compliance_piam
+/KeepTruckin/UI/MainLogList/ @mobile_compliance_piam
+/KeepTruckin/UI/LogEdit/ @mobile_compliance_piam
+/KeepTruckin/UI/LogDetail/ @mobile_compliance_piam
+/KeepTruckin/UI/UnregulatedMovement/ @mobile_compliance_piam
+/KeepTruckin/UI/Vehicle/ @mobile_compliance_piam
+/KeepTruckin/UI/InspectionDetailsAndDLR/ @mobile_compliance_piam
+/KeepTruckin/UI/QSS/ @mobile_compliance_piam
+/KeepTruckin/UI/SendObjects/ @mobile_compliance_piam
+
+# Driver App Experience
+/KeepTruckin/Feature/DriverWalkthrough/ @mobile_driver_app_experience_piam
+/KeepTruckin/Feature/DriverHub/ @mobile_driver_app_experience_piam
+/KeepTruckin/Feature/Places/ @mobile_driver_app_experience_piam
+/KeepTruckin/UI/DriverWalkthrough/ @mobile_driver_app_experience_piam
+/KeepTruckin/UI/DriverHub/ @mobile_driver_app_experience_piam
+/KeepTruckin/View\ Controllers/Driver\ Hub/ @mobile_driver_app_experience_piam
+/KeepTruckin/View\ Controllers/Account/ @mobile_driver_app_experience_piam
+
+# Safety
+/KeepTruckin/Feature/PerformanceHub/ @mobile_safety_piam
+/KeepTruckin/Feature/Dashcam/ @mobile_safety_piam
+/KeepTruckin/UI/PerformanceHub/ @mobile_safety_piam
+/KeepTruckin/Feature/InCabAlerts/ @mobile_safety_piam
+/KeepTruckin/View\ Controllers/Logs/Select\ Vehicle/DashcamImagesVM @mobile_safety_piam
+/KeepTruckin/View\ Controllers/Logs/Select\ Vehicle/DashcamImagesVC @mobile_safety_piam
+/KeepTruckin/View\ Controllers/Logs/Select\ Vehicle/ManageDashcamVM @mobile_safety_piam
+/KeepTruckin/View\ Controllers/Logs/Select\ Vehicle/ManageDashcamVC @mobile_safety_piam
+
+
+# VG5 Compliance
+/KeepTruckin/Feature/EldVehicleSoftware/ @mobile_vg5_compliance_piam
+
+# International Markets
+/KeepTruckin/Feature/LocalizedAddressForms/ @mobile_international_markets_piam
+
+# Mobile Platform - App Architecture
+/KeepTruckin/Feature/Architechture/ @mobile_app_architecture_piam
+/KeepTruckin/Feature/SharedKMM/ @mobile_app_architecture_piam
+/KeepTruckin/Core/ @mobile_app_architecture_piam
+/KeepTruckin/KMM/ @mobile_app_architecture_piam
+/KeepTruckin/Coordinators/ @mobile_app_architecture_piam
+/KeepTruckin/Application/ @mobile_app_architecture_piam
+/KeepTruckin/Module/WindowManager/ @mobile_app_architecture_piam
+/KeepTruckin/Module/Debug/ @mobile_app_architecture_piam
+
+# Mobile Platform - App Observability & Reliability
+/KeepTruckin/Feature/FeatureFlag/ @mobile_app_observability_and_reliability_piam
+/KeepTruckin/Feature/NetworkMetrics/ @mobile_app_observability_and_reliability_piam
+/KeepTruckin/Feature/DataUsageReporting/ @mobile_app_observability_and_reliability_piam
+
+# Mobile Platform - Developer Experience
+/KeepTruckin/Feature/Settings/ @mobile_developer_experience_piam
+/KeepTruckin/Feature/Sessions/ @mobile_developer_experience_piam
+/KeepTruckin/Feature/User/ @mobile_developer_experience_piam
+/fastlane/ @mobile_developer_experience_piam
+/scripts/ @mobile_developer_experience_piam
+
+# Mobile Platform - Design System
+/KeepTruckin/UI/Common/ @mobile_design_system_piam
+/KeepTruckin/View\ Controllers/Common/ @mobile_design_system_piam
